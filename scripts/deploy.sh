@@ -1,4 +1,5 @@
 #!/bin/bash
-echo "Starting deployment..."
-echo "Deploying version: latest"
+VERSION=$(git describe --tags)
+echo "Deploying version : $VERSION"
+kubectl apply -f deployment/kubernetes/
 echo "Deployment successful."

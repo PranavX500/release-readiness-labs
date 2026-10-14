@@ -13,8 +13,8 @@ spec:
         app: lab-app
     spec:
       containers:
-      - name: lab-app:v2.3.0
-        image: lab-app:production-build
+      - name: lab-app
+        image: lab-app:v2.3.0
         ports:
         - containerPort: 3000
         env:
